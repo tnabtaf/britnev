@@ -1,0 +1,228 @@
+{
+    "min_2b_tractable":   0.033,
+    "max_2b_interesting": 0.70,
+    "num_questions": 15,
+    "label_columns": 4,
+    "label_rows": 15,
+    "labels_per_person": 15,
+    "labels_fields": [
+        "Last Name",
+        "First Name",
+        "Company",
+        "Work City",
+        "Work State",
+        "Work Country"
+    ],
+    "questions": [
+        {
+            "question": "you have never met before, <em>in person or online</em>",
+            "penetrance": 1.0,
+            "difficulty": 0.10
+        },
+        {
+            "question": "you have never met before <em>in person</em>",
+            "penetrance": 1.0,
+            "difficulty": 0.10
+        },
+        {
+            "question": "is a poster presenter",
+            "penetrance": 0.50,
+            "difficulty": 0.05
+        },
+        {
+            "question": "is a lightning talk presenter",
+            "penetrance": 0.30,
+            "difficulty": 0.10
+        },
+        {
+            "question": "is a demo presenter",
+            "penetrance": 0.25,
+            "difficulty": 0.05
+        },
+        {
+            "question": "has contributed code, doc, translations, <em>or anything</em> to any of the OBF Bio* projects",
+            "penetrance": 0.25,
+            "difficulty": 0.95
+        },
+        {
+            "question": "is an accepted (long) talk presenter",
+            "penetrance": 0.15,
+            "difficulty": 0.10
+        },
+        {
+            "question": "is a training session instructor",
+            "penetrance": 0.12,
+            "difficulty": 0.20
+        },
+        {
+            "question": "is a BoF organizer",
+            "penetrance": 0.10,
+            "difficulty": 0.20
+        },
+        {
+            "question": "has attended an OBF CodeFest before",
+            "penetrance": 0.10,
+            "difficulty": 0.6
+        },
+        {
+            "question": "has attended a Galaxy-related hackathan/contribution fest before ",
+            "penetrance": 0.10,
+            "difficulty": 0.6
+        },
+        {
+            "question": "this is the first BOSC or GCC they have attended",
+            "penetrance": 0.10,
+            "difficulty": 0.8
+        },
+        {
+            "question": "has updated the OBF wiki",
+            "penetrance": 0.10,
+            "difficulty": 0.60
+        },
+        {
+            "question": "has contributed code to any project in github.com/galaxyproject",
+            "penetrance": 0.1,
+            "difficulty": 0.9
+        },
+        {
+            "question": "has submitted doc to the GalaxyProject.org hub, or the wiki that preceded it",
+            "penetrance": 0.1,
+            "difficulty": 0.9
+        },
+        {
+            "question": "has attended at least 3 previous GCCs",
+            "penetrance": 0.05,
+            "difficulty": 0.95
+        },
+        {
+            "question": "has attended at least 4 previous BOSCs",
+            "penetrance": 0.05,
+            "difficulty": 0.95
+        },
+        {
+            "question": "is a member of the Scientific Program Committees for BOSC or GCC 2018",
+            "penetrance": 0.05,
+            "difficulty": 0.30
+        },
+        {
+            "question": "is on the GCCBOSC organizing committee",
+            "penetrance": 0.05,
+            "difficulty": 0.20
+        },
+        {
+            "question": "has contributed at least one tool to the Galaxy Tool Shed",
+            "penetrance": 0.05,
+            "difficulty": 0.95
+        },
+
+
+        {
+            "question": "is representing a GCCBOSC sponsor",
+            "penetrance": 1.0,
+            "difficulty": 0.05
+        },
+        {
+            "question": "is on the Platinum Sponsor X team",
+            "penetrance": 1.0,
+            "difficulty": 0.5
+        },
+        {
+            "question": "is with Sponsor Y",
+            "penetrance": 0.5,
+            "difficulty": 0.05
+        },
+        {
+            "question": "is with Sponsor Z",
+            "penetrance": 0.25,
+            "difficulty": 0.5
+        },
+        {
+            "question": "is or has worked at or attended University Sponsor A",
+            "penetrance": 0.25,
+            "difficulty": 0.85
+        },        
+        {
+            "question": "has published in <em>Sponsor Journal B</em>",
+            "penetrance": 0.25,
+            "difficulty": 0.75
+        },
+        {
+            "question": "has published a paper in <em>Sponsor Journal C</em>",
+            "penetrance": 0.125,
+            "difficulty": 0.75
+        },
+        {
+            "question": "has published slides or a poster in the online repository at <em>Sponsor E</em>",
+            "penetrance": 0.125,
+            "difficulty": 0.5
+        },
+        {
+            "question": "has published in <em>Journal Sponsor D</em>",
+            "penetrance": 0.25,
+            "difficulty": 0.75
+        },
+        {
+            "question": "has published an article in <em>Journal Sponsor F</em>",
+            "penetrance": 0.125,
+            "difficulty": 0.75
+        }
+
+    ],
+    "data_questions": [
+        {
+            "input_item": "Work City",
+            "input_arity": "Singleton",
+            "output_question": "from the city/area of"
+        },    
+        {
+            "input_item": "Work State",
+            "input_arity": "Singleton",
+            "output_question": "from the state/province of"
+        },
+        {
+            "input_item": "Work Country",
+            "input_arity": "Singleton",
+            "output_question": "from"
+        },
+        {
+            "input_item": "Company",
+            "input_arity": "Singleton",
+            "output_question": "affiliated with"
+        },    
+        {
+            "input_item": "CollaborationFest: Core, Fri-Sat, June 29-30",
+            "input_arity": "Singleton",
+            "output_question": "registered for"
+        },
+        {
+            "input_item": "Continent",
+            "input_arity": "Singleton",
+            "output_question": "from"
+        },    
+        {
+            "input_item": "Industry",
+            "input_arity": "Singleton",
+            "output_question": "works in"
+        },    
+        {
+            "input_item": "University",
+            "input_arity": "Singleton",
+            "output_question": "is affiliated with a"
+        },    
+        {
+            "input_item": "Hospital / Medical school",
+            "input_arity": "Singleton",
+            "output_question": "is affiliated with a"
+        },    
+        {
+            "input_item": "Hospital / Medical school",
+            "input_arity": "Singleton",
+            "output_question": "works at a"
+        },    
+        {
+            "input_item": "Training",
+            "input_arity": "List",
+            "output_question": "<strong>registered</strong> for the training:"
+        }
+    ]
+}
